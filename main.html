@@ -23,7 +23,7 @@
         if(sec < 10){ sec = "0" + sec; }
         
         var clock1 = year + '年' + month + '月' + date + '日' + '(' + myDay[day] + '曜日) ' + hour + '時' + min + '分' + sec + '秒';
-        document.getElementById('').innerHTML = clock1.toLocalString();
+        document.getElementById('clock1').innerHTML = clock1.toLocalString();
         
         //1000ミリ秒ごとに処理を実行
         window.setTimeout( "clock()", 1000);
